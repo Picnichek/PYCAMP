@@ -1,0 +1,85 @@
+# This used just for linters and pytest config
+# Campers will use it for dependecies themselfs later during camp
+[tool.isort]
+profile="black"
+line_length = 79
+multi_line_output = 3
+skip = [
+  ".venv",
+  "venv",
+]
+sections = [
+  "FUTURE",
+  "STDLIB",
+  "THIRDPARTY",
+  "FIRSTPARTY",
+  "LOCALFOLDER"
+]
+include_trailing_comma = true
+default_section = "THIRDPARTY"
+
+[tool.flake8]
+# https://www.flake8rules.com/
+ignore = [
+    # https://www.flake8rules.com/rules/E126.html
+    "E126",
+    # https://www.flake8rules.com/rules/W503.html
+    "W503",
+    # https://www.flake8rules.com/rules/W504.html
+    "W504",
+    # https://github.com/m-burst/flake8-pytest-style/blob/master/docs/rules/PT004.md
+    "PT004",
+    # Missing docstring in public module
+    "D100",
+    # Missing type annotation for self in method
+    "ANN101",
+    # Missing docstring in public method
+    "D102",
+    # Missing docstring in magic method
+    "D105",
+    # Missing docstring in public nested
+    "D106",
+    # Missing docstring in __init__
+    "D107",
+    # Missing argument description in the docstring
+    "D417"
+]
+per-file-ignores = [
+    "camp/dummy_test.py:ANN201",
+]
+docstring-convention ="google"
+inline-quotes = "double"
+docstring-quotes = "double"
+statistics = true
+count = true
+max-complexity = 10
+pytest-fixture-no-parentheses = true
+pytest-parametrize-names-type = "list"
+pytest-parametrize-values-type = "list"
+pytest-parametrize-values-row-type = "list"
+exclude = [
+  ".venv,",
+  "venv,",
+  "__init__.py",
+]
+
+[tool.mypy]
+exclude = '''(?x)(
+    test*\.py
+    | cat_downloader
+  )
+'''
+disallow_untyped_defs = true
+ignore_missing_imports = true
+disallow_any_generics = true
+
+[tool.pytest.ini_options]
+# --capture=no
+#   allow use of ipdb during tests
+# --ff
+#   run last failed tests first
+
+addopts = [
+  "--capture=no",
+  "--ff",
+]

@@ -1,0 +1,19 @@
+# Allows you to use fixtures in @pytest.mark.parametrize.
+#Docs: https://pypi.org/project/pytest-lazy-fixtures/
+pytest_lazy_fixtures
+#Click is a Python package for creating beautiful command line interfaces
+# https://click.palletsprojects.com/en/8.1.x/
+click
+# Pretty-print tabular data
+# https://github.com/astanin/python-tabulate
+tabulate
+# Typing stubs for tabulate
+# https://pypi.org/project/types-tabulate/
+types-tabulate
+# YAML parser and emitter for Python
+# https://pyyaml.org/
+pyyaml
+# Typing stubs for PyYAML
+# https://pypi.org/project/types-PyYAML/
+types-PyYAML
+

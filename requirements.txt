@@ -1,0 +1,99 @@
+# Gitlint is a git commit message linter written in python: it checks your commit messages for style.
+# https://jorisroovers.com/gitlint/
+gitlint
+# Testing
+pytest
+# To run test in parallel
+# Docs: https://github.com/pytest-dev/pytest-xdist
+pytest-xdist
+# To prettify pytest output
+pytest-sugar
+# This plugin produces coverage reports.
+pytest-cov
+# Thin-wrapper around the mock package for easier use with pytest
+# Docs: https://pytest-mock.readthedocs.io/en/latest/
+pytest-mock
+# requests-mock provides a building block to stub out the HTTP requests portions of your testing code
+# Docs: https://requests-mock.readthedocs.io/en/latest/
+requests-mock
+
+# Linters
+# https://flake8.pycqa.org/en/latest/
+flake8
+
+# Flake8 plug-in loading the configuration from pyproject.toml
+# https://github.com/john-hen/Flake8-pyproject
+flake8-pyproject
+
+# A plugin for Flake8 finding likely bugs and design problems in your program.
+# https://github.com/PyCQA/flake8-bugbear
+flake8-bugbear
+
+# Extension to enforce better comma placement.
+# https://github.com/PyCQA/flake8-commas
+flake8-commas
+
+# Much stricter linter for docstrings. Check periods, empty lines, etc.
+# https://github.com/pycqa/flake8-docstrings?tab=readme-ov-file
+flake8-docstrings
+
+# A flake8 plugin checking common style issues or inconsistencies with pytest-based tests.
+# https://github.com/m-burst/flake8-pytest-style
+flake8-pytest-style
+
+# Flake8 plugin for linting quotes style
+# https://github.com/zheller/flake8-quotes
+flake8-quotes
+
+# A flake8 plugin that warn about backslashes usage
+# https://github.com/wemake-services/flake8-broken-line
+flake8-broken-line
+
+# flake8 plugin to detect the absence of function annotations
+# https://github.com/sco1/flake8-annotations
+flake8-annotations
+
+# Check for python builtins being used as variables or parameters
+# https://github.com/gforcada/flake8-builtins
+flake8-builtins
+
+# A plugin that helps you write better list/set/dict comprehensions.
+# https://github.com/adamchainz/flake8-comprehensions
+flake8-comprehensions
+
+# Check for pdb;idbp imports
+# https://github.com/jbkahn/flake8-debugger
+flake8-debugger
+
+# Plugin that helps you simplify your code.
+# https://github.com/MartinThoma/flake8-simplify
+flake8-simplify
+
+# Removes commented-out code from Python files
+# https://github.com/wemake-services/flake8-eradicate
+flake8-eradicate
+
+# McCabe complexity checker
+# https://github.com/PyCQA/mccabe
+mccabe
+
+# For proper import sorting
+# https://github.com/PyCQA/isort
+isort
+
+# Static Typing for Python
+# https://github.com/python/mypy
+mypy
+# Typeshed contains external type annotations for Python
+# https://github.com/python/typeshed/blob/main/README.md
+types-requests
+# Improved REPL
+# https://github.com/gotcha/ipdb
+ipdb
+# https://ipython.org/
+ipython
+
+# Include requirements files of submodules, so all requirements may be
+# installed using single command
+-r camp/cat_downloader/requirements.txt
+-r camp/os_task/requirements.txt

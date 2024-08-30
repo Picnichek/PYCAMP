@@ -1,0 +1,46 @@
+{
+  // Exclude cache from explorer
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+    "**/.mypy_cache": true,
+  },
+
+  // Show vertical line after 79 to visualize end of line
+  "editor.rulers": [
+    79
+  ],
+
+  // Improve brackets displaying
+  "editor.bracketPairColorization.enabled": true,
+
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportPrivateImportUsage":"none",
+  },
+  // Display inline hints for types of returned values
+  "python.analysis.inlayHints.functionReturnTypes": true,
+
+  "mypy.enabled": true,
+
+  // Enable using pytest for testing
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true,
+
+  // Make links in gitlens popups clickable
+  "gitlens.autolinks": [
+    {
+      "prefix": "PYCAMP-",
+      "url": "https://saritasa.atlassian.net/browse/PYCAMP-<num>"
+    }
+  ],
+
+  // Enable automatic imports formatting after saving
+  "python.formatting.provider": "none",
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+    },
+  },
+}

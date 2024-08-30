@@ -1,0 +1,10 @@
+# Answers what were given during boilerplate initialization
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+# https://copier.readthedocs.io/en/stable/configuring/#the-copier-answersyml-file
+_commit: b31d8a9
+_src_path: git@github.com:saritasa-nest/saritasa-python-boilerplate-camp.git
+first_name: Kirill
+ignore_first_task: false
+last_name: Astrakhantsev
+python_version: '3.12'
+reviewer: nikita.azanov@saritasa.com
